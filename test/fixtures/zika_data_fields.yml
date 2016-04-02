@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  data_field_code: MyString
+  data_field_name: MyString
+  data_field_description: MyString
+  data_field_unit: MyString
+
+two:
+  data_field_code: MyString
+  data_field_name: MyString
+  data_field_description: MyString
+  data_field_unit: MyString

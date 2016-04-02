@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location_name: MyString
+  location_type: MyString
+  country: MyString
+  state_province: MyString
+  district_county_municipality: MyString
+  city: MyString
+  alt_name1: MyString
+  alt_name2: MyString
+
+two:
+  location_name: MyString
+  location_type: MyString
+  country: MyString
+  state_province: MyString
+  district_county_municipality: MyString
+  city: MyString
+  alt_name1: MyString
+  alt_name2: MyString
