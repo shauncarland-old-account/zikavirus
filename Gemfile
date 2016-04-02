@@ -35,6 +35,10 @@ gem 'whenever'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'httparty'
+
+
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -44,7 +48,10 @@ gem 'whenever'
 group :development, :test do
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
   gem 'debugger'
+  gem 'pry'
+  gem 'pry-debugger'
 end
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
