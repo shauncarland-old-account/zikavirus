@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160402221839) do
+ActiveRecord::Schema.define(version: 20160402222420) do
 
   create_table "data_sources", force: :cascade do |t|
     t.string   "source_name"
@@ -32,6 +32,18 @@ ActiveRecord::Schema.define(version: 20160402221839) do
     t.string   "alt_name2"
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
+  end
+
+  create_table "zika_data", force: :cascade do |t|
+    t.string   "report_date"
+    t.string   "datetime"
+    t.integer  "location_id"
+    t.integer  "data_field_id"
+    t.string   "time_period"
+    t.string   "time_period_type"
+    t.integer  "value"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
   create_table "zika_data_fields", force: :cascade do |t|
