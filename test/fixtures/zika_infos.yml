@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  report_date: MyString
+  datetime: MyString
+  location_id: 1
+  data_field_id: 1
+  time_period: MyString
+  time_period_type: MyString
+  value: 
+
+two:
+  report_date: MyString
+  datetime: MyString
+  location_id: 1
+  data_field_id: 1
+  time_period: MyString
+  time_period_type: MyString
+  value: 
