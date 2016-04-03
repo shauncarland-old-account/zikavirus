@@ -130,3 +130,18 @@ Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb062
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-04-02 15:29:14 -0400
+  [1m[36mLocation Load (2.6ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "locations" ("location_name", "location_type", "country", "state_province", "district_county_municipality", "city", "alt_name1", "alt_name2", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location_name", "Colombia-Antioquia-Medellin"], ["location_type", "municipality"], ["country", "Columbia"], ["state_province", "Antioquia"], ["district_county_municipality", "Medellin"], ["city", "N/A"], ["alt_name1", "ANTIOQUIA"], ["alt_name2", "MEDELLIN"], ["created_at", "2016-04-02 23:52:26.718628"], ["updated_at", "2016-04-02 23:52:26.718628"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT  "locations".* FROM "locations"  ORDER BY "locations"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "data_sources" ("id", "source_name", "source_description", "source_publisher", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 1], ["source_name", "CDC"], ["source_description", "CDCEPI"], ["source_publisher", "CDCEPI"], ["created_at", "2016-04-02 23:57:21.800617"], ["updated_at", "2016-04-02 23:57:21.800617"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mDataSource Load (1.5ms)[0m  SELECT "data_sources".* FROM "data_sources"
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "zika_data_fields" ("data_field_code", "data_field_name", "data_field_description", "data_field_unit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["data_field_code", "CO0001"], ["data_field_name", "zika_confirmed_laboratory"], ["data_field_description", "Zika confirmed in laboratory"], ["data_field_unit", "cases"], ["created_at", "2016-04-03 00:07:46.402722"], ["updated_at", "2016-04-03 00:07:46.402722"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36mZikaDataField Load (0.2ms)[0m  [1mSELECT "zika_data_fields".* FROM "zika_data_fields"[0m
